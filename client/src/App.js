@@ -1,13 +1,15 @@
 
+import { useSelector } from 'react-redux';
 import './App.css';
 import Body from './components/Body';
 import Home from './components/Home';
+import LandingPage from './components/LandingPage';
 import Setting from './components/Setting';
 import Friends from './components/sections/Friends';
 import Messages from './components/sections/Messages';
 import Notification from './components/sections/Notification';
 import ProfileSection from './components/sections/ProfileSection';
-import {RouterProvider, createBrowserRouter} from 'react-router-dom'
+import {RouterProvider, createBrowserRouter} from 'react-router-dom';
 
 const router = createBrowserRouter([
    {
@@ -43,8 +45,12 @@ const router = createBrowserRouter([
 ])
 
 function App() {
+  const user = useSelector(store=>store.userDetails.data)
+console.log(user)
   return <>
-      <RouterProvider router={router}/>
+  <div className='main'>
+ { user !== null ? <RouterProvider router={router}/>: <LandingPage/>}
+  </div>
   </>
 }
 

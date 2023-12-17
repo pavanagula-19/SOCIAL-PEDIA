@@ -50,3 +50,12 @@
 .sidebar-item:not(:last-child) {
   border-bottom: 1px solid #555 !important;
 }
+
+.sidebar-logout{
+  display: flex;
+  align-items: center;
+  margin-bottom: 35px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  margin-top: 120px;
+}
