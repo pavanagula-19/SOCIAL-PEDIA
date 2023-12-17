@@ -1,42 +1,52 @@
+
 .sidebar {
-    display: flex;
-    flex-direction: column;
-    background-color: #333;
-    padding: 20px;
-    width: 200px;
-    height: 600px;
-    color: white;
-    border-right: 1px solid #555;
-    font-size: 2rem;
-  }
+  display: flex;
+  flex-direction: column;
+  background-color: #333;
+  padding: 20px;
+  width: 200px;
+  height: 600px;
+  border-right: 1px solid #555;
+  font-size: 2rem;
+  position: fixed;
+  top:50.5px;
+  text-decoration: none !important;
+}
+.sidebar  a {
+  text-decoration: none !important;
+  color: white !important;
+}
+
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 35px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  margin-top: 30px;
+}
+
+.sidebar-item:hover {
+  background-color: #555;
+  border-radius: 5px;
   
-  .sidebar-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 35px; 
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-  }
-  
-  .sidebar-item:hover {
-    background-color: #555;
-    border-radius: 5px;
-  }
-  
-  .icon {
-    margin-right: 10px;
-  }
-  
-  .sidebar-item span {
-    font-size: 25px;
-    transition: color 0.3s;
-  }
-  
-  .sidebar-item:hover span {
-    color: #ffcc00;
-  }
-  
-  .sidebar-item:not(:last-child) {
-    border-bottom: 1px solid #555;
-  }
-  
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.sidebar-item span {
+  font-size: 15px;
+  transition: color 0.3s;
+  color: inherit;
+}
+
+.sidebar-item:hover span {
+  color: #ffcc00;
+}
+
+.sidebar-item:not(:last-child) {
+  border-bottom: 1px solid #555 !important;
+}
