@@ -2,14 +2,17 @@ import React from 'react';
 import { FaUser, FaEnvelope, FaBell, FaCog, FaUserFriends } from 'react-icons/fa';
 import { MdOutlineLogout } from "react-icons/md";
 import '../styles/Sidebar.css';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { removeUser } from '../utils/userSlice';
 
 const Sidebar = () => {
+  const navigate = useNavigate();
   const dispatch = useDispatch()
   const logoutUSer = ()=>{
       dispatch(removeUser())
+      localStorage.removeItem("user")
+      navigate('/')
   }
   return (
     <div className="sidebar">
