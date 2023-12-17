@@ -3,6 +3,7 @@ import './App.css';
 import Body from './components/Body';
 import Home from './components/Home';
 import Setting from './components/Setting';
+import Friends from './components/sections/Friends';
 import Messages from './components/sections/Messages';
 import Notification from './components/sections/Notification';
 import ProfileSection from './components/sections/ProfileSection';
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
       {
         path:'/profile',
         element: <ProfileSection />
+      },
+      {
+        path: 'connections',
+        element: <Friends/>
       },
       {
         path:'/messages',

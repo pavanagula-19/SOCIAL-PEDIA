@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaUser, FaEnvelope, FaBell, FaCog } from 'react-icons/fa';
+import { FaUser, FaEnvelope, FaBell, FaCog, FaUserFriends } from 'react-icons/fa';
 import '../styles/Sidebar.css';
 import { Link } from 'react-router-dom';
 
@@ -10,6 +10,12 @@ const Sidebar = () => {
       <div className="sidebar-item">
         <FaUser className="icon" />
         <span>Profile</span>
+      </div>
+      </Link>
+      <Link to='/connections'>
+      <div className="sidebar-item">
+      <FaUserFriends className="icon"/>
+        <span>Connections</span>
       </div>
       </Link>
       <Link to='/messages'>

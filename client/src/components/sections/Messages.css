@@ -1,8 +1,190 @@
 .messages-parent {
-    width: 50%;
-    height: 500x;
+    width: 70%;
+    height: 600px;
     margin-left: 250px;
-    margin-top: 55px;
-    border: 1px solid;
+    margin-top: 65px;
+    border: 1px solid #ddd;
     color: black;
-}
+    display: flex;
+  }
+  
+  .friends-list {
+    width: 30%;
+    height: 100%;
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .search-friends {
+    width: 100%;
+    height: 60px;
+    border: 1px solid #ddd;
+    background-color: white;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+  }
+  
+  .select-friends {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .friend {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .chat-profile {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .chat-name {
+    font-weight: bold;
+  }
+  
+  .conversation {
+    flex: 1;
+    border: 1px solid #ddd;
+    margin-left: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  .search-friends {
+    width: 100%;
+    height: 30px;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+  
+  .search-friends input {
+    flex: 1;
+    height: 25px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+  }
+  
+  .select-friends {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .friend {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+  }
+  
+  .chat-profile {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .chat-name {
+    font-weight: bold;
+    flex: 1;
+  }
+  
+  .conversation {
+    flex: 1;
+    border: 1px solid #ddd;
+    margin-left: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .conversation-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .conversation-friend {
+    display: flex;
+    align-items: center;
+  }
+  
+  .conversation-friend-icon {
+    margin-right: 10px;
+  }
+  
+  .conversation-friend-name {
+    font-weight: bold;
+  }
+  
+  .conversation-calls {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .conversation-video-call,
+  .conversation-audio-call {
+    cursor: pointer;
+  }
+  
+  .conversation-text {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .conversation-text-body {
+    height: 480px;
+  }
+  
+  .conversation-footer {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-top: 1px solid #ddd;
+  }
+  
+  .conversation-message-field {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .select-emojis {
+    /* Add styles for the emoji selector */
+  }
+  
+  .conversation-message-field input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    padding: 8px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+  }
+  
+  .conversation-message-send {
+    cursor: pointer;
+  }

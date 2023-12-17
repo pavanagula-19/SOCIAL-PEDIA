@@ -1,0 +1,155 @@
+
+.connections-parent {
+    width: 80%;
+    height: 600px;
+    margin-left: 250px;
+    margin-top: 65px;
+    border: 1px solid #ddd;
+    color: black;
+    display: flex;
+  }
+  
+  .connection-requests {
+    width: 40%;
+    height: 100%;
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .connection-request-header {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .connection-request-fields {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+  }
+  
+  .connection-request-profile {
+    width: 8%;
+    height: 50px;
+    border: 1px solid;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+  }
+  
+  .connection-request-name {
+    font-weight: bold;
+    flex-grow: 1;
+  }
+  
+  .connection-request-buttons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .cancel-button,
+  .add-button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .cancel-button {
+    color: #ff6347;
+  }
+  
+  .add-button {
+    color: #32cd32;
+  }
+  
+  .connections-list {
+    width: 60%;
+    height: 100%;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .connections-list-header {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .connections-list-friends {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .connections-search {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .search-icon {
+    margin-right: 8px;
+  }
+  
+  .connections-search input {
+    width: calc(100% - 30px);
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  .connections-list-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    flex-wrap: wrap;
+  }
+  
+  .connections-list-fields {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; /* Ensure the fields take the full width */
+  }
+  
+  .connection-list-profile {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .connection-list-name {
+    font-weight: bold;
+    flex-grow: 1;
+    margin-right: 10px;
+  }
+  
+  .connection-list-message {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .connection-list-message svg {
+    margin-right: 5px;
+  }
+  
+  

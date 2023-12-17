@@ -1,0 +1,9 @@
+.notification-parent{
+        width: 70%;
+        height: 600px;
+        margin-left: 280px;
+        margin-top: 65px;
+        border: 1px solid #ddd;
+        color: black;
+        display: flex;
+}

@@ -1,8 +1,10 @@
 import React from 'react'
-
+import "./Notification.css"
 const Notification = () => {
   return (
-    <div>Notification</div>
+    <div className='notification-parent'>
+      Notification
+    </div>
   )
 }
 
